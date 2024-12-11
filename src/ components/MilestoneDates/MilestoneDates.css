@@ -1,0 +1,28 @@
+.MilestoneDates {
+	background-color: #2ecc71;
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.MilestoneDates h2 {
+	margin-top: 0;
+	color: #ecf0f1;
+	font-size: 1.2em;
+}
+
+.MilestoneDates ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.MilestoneDates li {
+	margin-bottom: 10px;
+}
+
+.MilestoneDates li span {
+	font-weight: bold;
+	margin-right: 10px;
+}

@@ -1,0 +1,20 @@
+.DayOfWeek {
+	background-color: #e67e22;
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.DayOfWeek h2 {
+	margin-top: 0;
+	color: #ecf0f1;
+	font-size: 1.2em;
+}
+
+.DayOfWeek p {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 10px 0 0;
+}
