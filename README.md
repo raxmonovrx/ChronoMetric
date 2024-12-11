@@ -28,3 +28,25 @@ Terminalga quyidagi buyruqni yozib, loyihani klonlab oling:
 ```bash
 git clone https://github.com/raxmonovrx/ChronoMetric.git
 ```
+
+### 2. Kerakli kutubxonalarni o'rnatish
+
+Loyihani o'rnatish uchun, terminalda quyidagi buyruqni bajarib, node_modules papkasini yaratib oling:
+
+```bash
+cd ChronoMetric
+npm install
+```
+
+### 3. Loyihani ishga tushirish
+
+Ilovani lokal serverda ishga tushirish uchun quyidagi buyruqni bajaring:
+
+```bash
+npm start
+```
+
+## Kontaklar
+
+GitHub: https://github.com/raxmonovrx
+Telegram: @raxmonovrx.
