@@ -1,52 +1,52 @@
 # ChronoMetric
 
-ChronoMetric — bu foydalanuvchining tug'ilgan sanasidan boshlab turli yubiley sanalarini hisoblash imkonini beruvchi interaktiv veb-ilova. Loyihaning maqsadi foydalanuvchilarga o'z hayotidagi muhim sanalarni, masalan, 100, 1000 va 10000 kunlik yubileylarga qadar bo'lgan sanalarni hisoblash va kuzatish imkoniyatini taqdim etishdir.
+ChronoMetric is an interactive web application that allows users to calculate various milestone dates from their birthdate. The goal of the project is to provide users with the ability to calculate and track important milestones in their life, such as the dates of their 100, 1000, and 10000 day anniversaries.
 
-Bu loyiha React.js yordamida yaratilgan va foydalanuvchilarga o'z tug'ilgan sanalari asosida turli yubileylar haqida ma'lumot olish imkoniyatini beradi.
+This project is built with React.js and provides users with milestone information based on their birthdate.
 
-## Asosiy xususiyatlar
+## Key Features
 
-- **Tug'ilgan sanani kiritish**: Foydalanuvchi o'z tug'ilgan sanasini kiritadi.
-- **Yubiley sanalarini hisoblash**: 100 kunlik, 1000 kunlik va 10000 kunlik yubiley sanalarini avtomatik ravishda hisoblash.
-- **Tug'ilgan sanaga asoslangan yubileylarni ko'rsatish**: Foydalanuvchining tug'ilgan sanasiga asoslangan yubiley sanalarini aniqlash.
-- **Responsive dizayn**: Ilova barcha ekran o'lchamlariga moslashadi, ya'ni mobil qurilmalarda ham yaxshi ishlaydi.
-- **Foydalanuvchiga qulay interfeys**: Yubileylar va tug'ilgan sana bilan bog'liq barcha ma'lumotlar intuitiv tarzda ko'rsatiladi.
+- **Enter Birthdate**: Users input their birthdate.
+- **Calculate Milestone Dates**: Automatically calculates the 100th, 1000th, and 10000th day milestone dates.
+- **Show Milestones Based on Birthdate**: Displays milestone dates based on the user's birthdate.
+- **Responsive Design**: The application is fully responsive, meaning it works well on mobile devices.
+- **User-Friendly Interface**: All milestone and birthdate-related information is presented in an intuitive manner.
 
 ## Demo
 
-Loyihani ishlatish uchun quyidagi havolaga o'ting:
-[ChronoMetric Demo](https://your-demo-link.com)
+To try the project, click on the following link:
+[ChronoMetric Demo](https://chrono-metric.vercel.app)
 
-## O'rnatish
+## Installation
 
-Loyihani lokal kompyuteringizga o'rnatish uchun quyidagi amallarni bajarishingiz mumkin.
+To install the project on your local machine, follow these steps.
 
-### 1. Loyihani klonlash
+### 1. Clone the Repository
 
-Terminalga quyidagi buyruqni yozib, loyihani klonlab oling:
+Clone the repository by running the following command in your terminal:
 
 ```bash
 git clone https://github.com/raxmonovrx/ChronoMetric.git
 ```
 
-### 2. Kerakli kutubxonalarni o'rnatish
+### 2. Install Dependencies
 
-Loyihani o'rnatish uchun, terminalda quyidagi buyruqni bajarib, node_modules papkasini yaratib oling:
+Install the required dependencies by running the following command:
 
 ```bash
 cd ChronoMetric
 npm install
 ```
 
-### 3. Loyihani ishga tushirish
+### 3. Run the Project
 
-Ilovani lokal serverda ishga tushirish uchun quyidagi buyruqni bajaring:
+To start the project on your local server, run the following command:
 
 ```bash
 npm start
 ```
 
-## Kontaklar
+### Contact
 
 GitHub: https://github.com/raxmonovrx
-Telegram: @raxmonovrx.
+Telegram: https://t.me:/raxmonovrx
