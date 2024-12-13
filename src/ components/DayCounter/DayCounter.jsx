@@ -22,7 +22,7 @@ function DayCounter({ birthDate }) {
 
 	return (
 		<div className='DayCounter'>
-			<h2>Days since birth:</h2>
+			<h2>Days since birth</h2>
 			<p>{daysPassed} days</p>
 		</div>
 	)

@@ -24,7 +24,7 @@ function DayOfWeek({ birthDate }) {
 
 	return (
 		<div className='DayOfWeek'>
-			<h2>{dayOfWeek || 'Day of the Week You Were Born:'}</h2>
+			<h2>{'Day of the Week You Were Born'}</h2>
 			<p>{dayOfWeek}</p>
 		</div>
 	)

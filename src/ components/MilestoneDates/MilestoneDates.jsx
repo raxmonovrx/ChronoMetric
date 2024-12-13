@@ -8,11 +8,11 @@ function MilestoneDates({ birthDate }) {
 		)
 
 		const options = {
-			day: '2-digit',
-			month: 'numeric',
+			day: 'numeric',
+			month: 'long',
 			year: 'numeric',
 		}
-		return milestoneDate.toLocaleDateString(options)
+		return milestoneDate.toLocaleDateString('en-US', options)
 	}
 
 	return (

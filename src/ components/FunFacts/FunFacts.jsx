@@ -1,38 +1,16 @@
 import PropTypes from 'prop-types'
-import { useEffect, useState } from 'react'
 import './FunFacts.css'
 
 function FunFacts({ birthDate }) {
-	const [fact, setFact] = useState('')
-	const [translatedFact, setTranslatedFact] = useState('')
-
-	useEffect(() => {
-		const fetchFact = async () => {
-			const month = birthDate.getMonth() + 1
-			const day = birthDate.getDate()
-
-			try {
-				const response = await fetch(
-					`http://numbersapi.com/${month}/${day}/date`
-				)
-				const data = await response.text()
-				setFact(data)
-				setTranslatedFact(data)
-			} catch (error) {
-				console.error('Error fetching fact:', error)
-				setFact('Error fetching fact')
-			}
-		}
-
-		if (birthDate) {
-			fetchFact()
-		}
-	}, [birthDate])
+	const formatDate = date => {
+		const options = { year: 'numeric', month: 'long', day: 'numeric' }
+		return date.toLocaleDateString('en-US', options)
+	}
 
 	return (
 		<div className='FunFacts'>
-			<h2>Fun Fact</h2>
-			<p>{translatedFact || fact}</p>
+			<h2>Special Day</h2>
+			<p>You were born on {formatDate(birthDate)}.</p>
 		</div>
 	)
 }
