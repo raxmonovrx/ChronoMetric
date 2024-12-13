@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 
 import './DayCounter.css'
 
-function DayCounter({ birthDate, t }) {
+function DayCounter({ birthDate }) {
 	const [daysPassed, setDaysPassed] = useState(0)
 
 	useEffect(() => {
@@ -15,27 +15,21 @@ function DayCounter({ birthDate, t }) {
 		}
 
 		updateDaysPassed()
-		const timer = setInterval(updateDaysPassed, 1000)
+		const timer = setInterval(updateDaysPassed, 86400000)
 
 		return () => clearInterval(timer)
 	}, [birthDate])
 
 	return (
 		<div className='DayCounter'>
-			<h2>{t.daysSinceBirth}</h2>
-			<p>
-				{daysPassed} {t.days}
-			</p>
+			<h2>Days since birth:</h2>
+			<p>{daysPassed} days</p>
 		</div>
 	)
 }
 
 DayCounter.propTypes = {
 	birthDate: PropTypes.instanceOf(Date).isRequired,
-	t: PropTypes.shape({
-		daysSinceBirth: PropTypes.string.isRequired,
-		days: PropTypes.string.isRequired,
-	}).isRequired,
 }
 
 export default DayCounter

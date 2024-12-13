@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { useState } from 'react'
 import './BirthDateInput.css'
 
-function BirthDateInput({ onBirthDateChange, t }) {
+function BirthDateInput({ onBirthDateChange }) {
 	const [date, setDate] = useState('')
 	const [error, setError] = useState('')
 
@@ -14,7 +14,7 @@ function BirthDateInput({ onBirthDateChange, t }) {
 		const currentDate = new Date()
 
 		if (selectedDate > currentDate) {
-			setError(t.errorMessage)
+			setError('Please select a date in the past or today')
 			onBirthDateChange(null)
 		} else {
 			setError('')
@@ -24,7 +24,7 @@ function BirthDateInput({ onBirthDateChange, t }) {
 
 	return (
 		<div className='BirthDateInput'>
-			<label htmlFor='birthdate'>{t.enterBirthDate}</label>
+			<label htmlFor='birthdate'>Enter your birth date:</label>
 			<input
 				type='date'
 				id='birthdate'
@@ -39,10 +39,6 @@ function BirthDateInput({ onBirthDateChange, t }) {
 
 BirthDateInput.propTypes = {
 	onBirthDateChange: PropTypes.func.isRequired,
-	t: PropTypes.shape({
-		enterBirthDate: PropTypes.string.isRequired,
-		errorMessage: PropTypes.string.isRequired,
-	}).isRequired,
 }
 
 export default BirthDateInput

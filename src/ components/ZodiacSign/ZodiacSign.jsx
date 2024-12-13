@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import './ZodiacSign.css'
 
-function ZodiacSign({ birthDate, t }) {
+function ZodiacSign({ birthDate }) {
 	const getZodiacSign = date => {
 		if (!date || !(date instanceof Date)) {
 			return 'Unknown'
@@ -57,31 +57,19 @@ function ZodiacSign({ birthDate, t }) {
 
 	const zodiacSign = getZodiacSign(birthDate)
 	const chineseZodiac = getChineseZodiac(birthDate)
-	const translatedZodiacSign = t.zodiacSigns
-		? t.zodiacSigns[zodiacSign]
-		: zodiacSign
-	const translatedChineseZodiac = t.chineseZodiacSigns
-		? t.chineseZodiacSigns[chineseZodiac]
-		: chineseZodiac
 
 	return (
 		<div className='ZodiacSign'>
-			<h2>{t.zodiacSign || 'Your Zodiac Sign (Solar):'}</h2>
-			<p>{translatedZodiacSign}</p>
-			<h2>{t.chineseZodiac || 'Your Chinese Zodiac Sign:'}</h2>
-			<p>{translatedChineseZodiac}</p>
+			<h2>Your Zodiac Sign (Solar):</h2>
+			<p>{zodiacSign}</p>
+			<h2>Your Chinese Zodiac Sign:</h2>
+			<p>{chineseZodiac}</p>
 		</div>
 	)
 }
 
 ZodiacSign.propTypes = {
 	birthDate: PropTypes.instanceOf(Date).isRequired,
-	t: PropTypes.shape({
-		zodiacSign: PropTypes.string,
-		chineseZodiac: PropTypes.string,
-		zodiacSigns: PropTypes.objectOf(PropTypes.string).isRequired,
-		chineseZodiacSigns: PropTypes.objectOf(PropTypes.string).isRequired,
-	}).isRequired,
 }
 
 export default ZodiacSign

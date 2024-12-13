@@ -1,18 +1,12 @@
-import PropTypes from 'prop-types'
 import './Header.css'
 
-function Header({ title, subtitle }) {
+function Header() {
 	return (
 		<header className='Header'>
-			<h1>{title}</h1>
-			<p>{subtitle}</p>
+			<h1>ChronoMetric</h1>
+			<p>Discover interesting facts about your birth date!</p>
 		</header>
 	)
-}
-
-Header.propTypes = {
-	title: PropTypes.string.isRequired,
-	subtitle: PropTypes.string.isRequired,
 }
 
 export default Header
